@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#000010">
+<title>Emberfall: The Emberwild Saga</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="loading" class="screen active"><div class="loadbox"><h1>Emberfall</h1><p>Kindling the Emberwild…</p></div></div>
+
+  <div id="title" class="screen">
+    <canvas id="titleart" width="640" height="300"></canvas>
+    <div class="titlebox">
+      <h1>Emberfall</h1>
+      <h2>The Emberwild Saga</h2>
+      <div id="titlemenu" class="menu"></div>
+      <p class="small">A party-based fantasy role-playing game. Original setting, rules after the second edition of the classic tabletop game.</p>
+    </div>
+  </div>
+
+  <div id="game" class="screen">
+    <div id="viewwrap">
+      <canvas id="view"></canvas>
+      <canvas id="wildview"></canvas>
+      <div id="viewtitle"></div>
+      <div id="compass"></div>
+      <div id="navpad"></div>
+    </div>
+    <div id="roster"></div>
+    <div id="infobar">
+      <canvas id="minimap" width="132" height="132"></canvas>
+      <div id="log"></div>
+    </div>
+    <div id="status"></div>
+    <div id="cmdbar"></div>
+  </div>
+
+  <div id="combat" class="screen">
+    <div id="cfield"><canvas id="ccanvas"></canvas><div id="cbanner"></div></div>
+    <div id="cside">
+      <div id="cturn"></div>
+      <div id="cmenu"></div>
+      <div id="clog"></div>
+    </div>
+  </div>
+
+  <div id="modals"></div>
+  <div id="toast"></div>
+</div>
+
+<script src="js/rules.js"></script>
+<script src="js/data.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/monsters.js"></script>
+<script src="js/wilds.js"></script>
+<script src="js/treasure.js"></script>
+<script src="js/adventures.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/view3d.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/overland.js"></script>
+<script src="js/campaign.js"></script>
+<script src="js/journal.js"></script>
+<script src="js/map.js"></script>
+<script src="js/bestiary.js"></script>
+<script src="js/navpad.js"></script>
+<script src="js/watch.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
